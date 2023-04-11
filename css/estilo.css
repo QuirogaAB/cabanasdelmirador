@@ -18,7 +18,7 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image:linear-gradient(to top,#92aeff,#94e3ff , #7cdefd );
+    background-image: linear-gradient(to top, #92aeff, #94e3ff, #7cdefd);
     flex-direction: row;
     padding: row;
     flex-wrap: wrap;
@@ -56,15 +56,6 @@ a:active {
     justify-content: left;
 }
 
-.df_ul li {
-    display: flex;
-    margin: 10px;
-    font-family: 'Great Vibes', cursive;
-    flex-wrap: wrap;
-
-}
-
-
 
 .portada {
     display: flex;
@@ -100,7 +91,7 @@ a:active {
 }
 
 .tarjeta:hover {
-    transform: translate( 0px,10px);
+    transform: translate(0px, 10px);
 }
 
 .tarjeta_imagen {
@@ -155,27 +146,13 @@ a:active {
     font-size: xx-large;
 }
 
-.servicios {
-    padding: 35px;
-    display: flex;
-    gap: 40px;
+.carousel-inner.servicios {
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
 }
 
-.servicios_imagenes {
-    background-color: #ffffff;
-    border-radius: 10px;
-    height: 40vh;
-    max-width: 20%;
-    flex: 1;
-    margin-inline: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    margin-inline: 5%;
-    margin-bottom: 5%;
-    flex-direction: row;
-    align-items: center;
-}
+
 
 .servicios_informacion {
     background-color: #b8860b;
@@ -193,7 +170,7 @@ a:active {
     transition: 1s;
 }
 
-.servicios_informacion:hover{
+.servicios_informacion:hover {
     transform: scale(1.2);
 }
 
@@ -217,6 +194,12 @@ a:active {
     padding: 35px;
     display: flex;
     gap: 40px;
+}
+
+.carousel-inner.promociones {
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
 }
 
 .promociones_imagenes {
@@ -243,6 +226,7 @@ a:active {
     margin-bottom: 5%;
     flex-wrap: wrap;
 }
+
 .promociones_informacion {
     transition: 1s;
 }
@@ -291,7 +275,7 @@ a:active {
     transition: 1s;
 }
 
-.ubicacion_informacion:hover{
+.ubicacion_informacion:hover {
     transform: scale(1.2);
 }
 
@@ -325,7 +309,7 @@ a:active {
     transition: 1s;
 }
 
-.contacto_informacion:hover{
+.contacto_informacion:hover {
     transform: scale(1.2);
 }
 
@@ -390,60 +374,122 @@ a:active {
     }
 
     .tarjeta {
-    
+
         flex-direction: column;
-        
+
     }
+
+    .tarjeta:hover {
+        transform: translate(0px, 10px);
+
+    }
+
     .tarjeta_imagen {
         padding: 10%;
     }
-    .tarjeta:hover {
-        transform: translate( 0px,10px);
-    }
+
 
     .servicios {
-        
+
         flex-direction: column;
-    }  
+    }
+
 
     .servicios_imagenes {
         flex-direction: column;
     }
 
+    .servicios_informacion {
+        transition: 1s;
+    }
+
+    .servicios_informacion:hover {
+        transform: scale(1.2);
+    }
+
+    .promociones_informacion {
+        transition: 1s;
+    }
+
+    .promociones_informacion:hover {
+        transform: scale(1.2);
+    }
+
     .ubicacion_mapa {
         align-items: flex-start;
+    }
+    .ubicacion_informacion {
+        transition: 1s;
+    }
+    
+    .ubicacion_informacion:hover {
+        transform: scale(1.2);
+    }
+    .contacto_informacion {
+        transition: 1s;
+    }
+    
+    .contacto_informacion:hover {
+        transform: scale(1.2);
     }
 }
 
 
 @media screen and (max-width: 767px) {
 
+    .df_header {
+        flex-direction: column;
+    }
 
-.df_header {
-    flex-direction: column;
-}
+    .df_ul {
+        align-items: flex-start;
+    }
 
-.df_ul {
-    align-items: flex-start;
-}
+    .tarjeta {
+        padding: 10%;
+        flex-direction: column;
 
-.tarjeta {
-    padding: 10%;
-    flex-direction: column;
+    }
+
+    .tarjeta:hover {
+        transform: translate(0px, 10px);
+    }
+
+    .servicios {
+
+        flex-direction: column;
+    }
+
+    .servicios_informacion {
+        transition: 1s;
+    }
+
+    .servicios_informacion:hover {
+        transform: scale(1.2);
+    }
+
+    .promociones_informacion {
+        transition: 1s;
+    }
+
+    .promociones_informacion:hover {
+        transform: scale(1.2);
+    }
+    .ubicacion_mapa {
+        flex-direction: column;
+    }
+    .ubicacion_informacion {
+        transition: 1s;
+    }
     
-}
-
-.tarjeta:hover {
-    transform: translate( 0px,10px);
-}
-
-.servicios {
+    .ubicacion_informacion:hover {
+        transform: scale(1.2);
+    }
+    .contacto_informacion {
+        transition: 1s;
+    }
     
-    flex-direction: column;
-}  
-
-.ubicacion_mapa {
-    flex-direction: column;
-}
-
+    .contacto_informacion:hover {
+        transform: scale(1.2);
+    }
 }
