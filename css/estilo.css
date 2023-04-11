@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*---------------------*/
+.df_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:linear-gradient(to top,#92aeff,#94e3ff , #7cdefd );
+    flex-direction: row;
+    padding: row;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+
+}
+
+.logo {
+    margin-left: 1%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.df_titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+    flex-wrap: wrap;
+}
+
+.df_ul {
+    display: flex;
+    font-size: larger;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.df_ul li {
+    display: flex;
+    margin: 10px;
+    font-family: 'Great Vibes', cursive;
+    flex-wrap: wrap;
+
+}
+
+
+
+.portada {
+    display: flex;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------fin header--------*/
+
+/*--------main------------*/
+.main {
+    padding: 30px;
+}
+
+/*---tarjeta-------------*/
+
+.tarjeta {
+    display: flex;
+    background-color: #b8860b;
+    background-size: cover;
+    width: 22%;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-inline: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.tarjeta:hover {
+    transform: translate( 0px,10px);
+}
+
+.tarjeta_imagen {
+    display: flex;
+    height: 35vh;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+
+.tarjeta_parrafo {
+    display: flex;
+    font-size: 23px;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+
+.tarjeta_boton {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+
+
+.tarjeta_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area:
+        " . texto";
+}
+
+/*----FIN TARJETA-----*/
+
+/*---SERVICIOS-------*/
+.titulo_servicios {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.servicios {
+    padding: 35px;
+    display: flex;
+    gap: 40px;
+}
+
+.servicios_imagenes {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 40vh;
+    max-width: 20%;
+    flex: 1;
+    margin-inline: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-inline: 5%;
+    margin-bottom: 5%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.servicios_informacion {
+    background-color: #b8860b;
+    padding: 10px;
+    border-radius: 10px;
+    display: flow-root;
+    margin-inline: 15%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.servicios_informacion {
+    transition: 1s;
+}
+
+.servicios_informacion:hover{
+    transform: scale(1.2);
+}
+
+/*------FIN SERVICIOS----*/
+
+
+/*------PROMOCIONES----*/
+
+.titulo_promociones {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: xx-large;
+
+}
+
+.promociones {
+    padding: 35px;
+    display: flex;
+    gap: 40px;
+}
+
+.promociones_imagenes {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 60vh;
+    max-width: 30%;
+    flex: 1;
+    margin-inline: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.promociones_informacion {
+    background-color: #b8860b;
+    padding: 10px;
+    border-radius: 10px;
+    display: flow-root;
+    margin-inline: 10%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+.promociones_informacion {
+    transition: 1s;
+}
+
+.promociones_informacion:hover {
+    transform: scale(1.2);
+}
+
+/*----FIN PROMOCIONES----*/
+
+
+/*-----UBICACION---------*/
+.titulo_ubicacion {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+    font-weight: 700
+}
+
+.ubicacion_mapa {
+    width: 650px;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+
+}
+
+.ubicacion_informacion {
+    background-color: #b8860b;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    margin-inline: 20px;
+    margin-left: 20%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.ubicacion_informacion {
+    transition: 1s;
+}
+
+.ubicacion_informacion:hover{
+    transform: scale(1.2);
+}
+
+/*-----FIN UBICACION------*/
+
+
+/*------CONTACTO---------*/
+.titulo_contacto {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    font-size: xx-large
+}
+
+.contacto_informacion {
+    background-color: #b8860b;
+    padding: 1%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 40%;
+    flex-wrap: wrap;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    font-weight: 300
+}
+
+.contacto_informacion {
+    transition: 1s;
+}
+
+.contacto_informacion:hover{
+    transform: scale(1.2);
+}
+
+.formulario {
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 46%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.redes {
+    margin-top: 2%;
+    margin-left: 49%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.imagen_contacto {
+    background-color: #b8860b;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*------FIN CONTACTO-----*/
+
+
+/*------------fin main--------*/
+
+
+/*------------footer--------*/
+.bg_footer {
+    background-color: #87cefa;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type_white {
+    color: #000000;
+}
+
+/*------------fin footer--------*/
+
+@media screen and (max-width: 1023px) {
+
+    .df_header {
+        flex-direction: column;
+    }
+
+    .df_ul {
+        align-items: flex-start;
+    }
+
+    .tarjeta {
+    
+        flex-direction: column;
+        
+    }
+    .tarjeta_imagen {
+        padding: 10%;
+    }
+    .tarjeta:hover {
+        transform: translate( 0px,10px);
+    }
+
+    .servicios {
+        
+        flex-direction: column;
+    }  
+
+    .servicios_imagenes {
+        flex-direction: column;
+    }
+
+    .ubicacion_mapa {
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+.df_header {
+    flex-direction: column;
+}
+
+.df_ul {
+    align-items: flex-start;
+}
+
+.tarjeta {
+    padding: 10%;
+    flex-direction: column;
+    
+}
+
+.tarjeta:hover {
+    transform: translate( 0px,10px);
+}
+
+.servicios {
+    
+    flex-direction: column;
+}  
+
+.ubicacion_mapa {
+    flex-direction: column;
+}
+
+}
