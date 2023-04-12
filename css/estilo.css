@@ -2,8 +2,8 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -416,19 +416,27 @@ a:active {
     }
 
     .ubicacion_mapa {
-        align-items: flex-start;
+        width: 650px;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
     }
+    .ubicacion_informacion{
+        margin-left: 5%;
+    }
+
     .ubicacion_informacion {
         transition: 1s;
     }
-    
+
     .ubicacion_informacion:hover {
         transform: scale(1.2);
     }
+
     .contacto_informacion {
         transition: 1s;
     }
-    
+
     .contacto_informacion:hover {
         transform: scale(1.2);
     }
@@ -475,21 +483,30 @@ a:active {
     .promociones_informacion:hover {
         transform: scale(1.2);
     }
+
     .ubicacion_mapa {
-        flex-direction: column;
+        width: 650px;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
     }
-    .ubicacion_informacion {
-        transition: 1s;
-    }
-    
-    .ubicacion_informacion:hover {
-        transform: scale(1.2);
-    }
-    .contacto_informacion {
-        transition: 1s;
-    }
-    
-    .contacto_informacion:hover {
-        transform: scale(1.2);
-    }
+}
+
+.ubicacion_informacion{
+    margin-left: 2%;
+}
+.ubicacion_informacion {
+    transition: 1s;
+}
+
+.ubicacion_informacion:hover {
+    transform: scale(1.2);
+}
+
+.contacto_informacion {
+    transition: 1s;
+}
+
+.contacto_informacion:hover {
+    transform: scale(1.2);
 }
