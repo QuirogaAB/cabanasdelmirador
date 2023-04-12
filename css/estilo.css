@@ -77,14 +77,17 @@ a:active {
 /*---tarjeta-------------*/
 
 .tarjeta {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    float: left;
     background-color: #b8860b;
     background-size: cover;
     width: 22%;
     padding: 10px;
     border-radius: 10px;
-    justify-content: flex-start;
-    display:row;
+    justify-content: space-between;
+    display: row;
     margin-inline: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -96,9 +99,12 @@ a:active {
 }
 
 .tarjeta_imagen {
-    display: flex;
-    height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
+    height: 35vh;
+
     justify-content: center;
     margin-bottom: 5px;
     flex-wrap: wrap;
@@ -106,7 +112,7 @@ a:active {
 
 
 .tarjeta_parrafo {
-    display: flex;
+    display: grid;
     font-size: 23px;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 10px;
@@ -134,7 +140,7 @@ a:active {
         " . texto";
 }
 
-/*----FIN TARJETA-----*/
+/*----FIN TARJETA-----*/--
 
 /*---SERVICIOS-------*/
 .titulo_servicios {
@@ -263,9 +269,9 @@ a:active {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
-    justify-content: center; 
+    justify-content: center;
     margin-inline: 20px;
-    margin-left: 30%;
+    margin-left: 20%;
     font-family: 'Great Vibes', cursive;
     font-size: 20px;
     margin-bottom: 5%;
@@ -352,10 +358,11 @@ a:active {
 /*------------footer--------*/
 .bg_footer {
     background-color: #87cefa;
+    display: grid;
+    grid-template-rows: 1fr;
     padding: 10px;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .type_white {
@@ -375,8 +382,11 @@ a:active {
     }
 
     .tarjeta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        float: left;
 
-        flex-direction: column;
 
     }
 
@@ -417,12 +427,13 @@ a:active {
     }
 
     .ubicacion_mapa {
-        width: 650px;
+        width: 600px;
         margin-left: 2%;
         margin-bottom: 5%;
         flex-wrap: wrap;
     }
-    .ubicacion_informacion{
+
+    .ubicacion_informacion {
         margin-left: 5%;
     }
 
@@ -441,7 +452,10 @@ a:active {
     .contacto_informacion:hover {
         transform: scale(1.2);
     }
+
+
 }
+
 
 
 @media screen and (max-width: 320px) {
@@ -455,8 +469,10 @@ a:active {
     }
 
     .tarjeta {
-        padding: 10%;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        float: left;
+
 
     }
 
@@ -486,28 +502,29 @@ a:active {
     }
 
     .ubicacion_mapa {
-        width: 650px;
+        width: 600px;
         margin-left: 2%;
         margin-bottom: 5%;
         flex-wrap: wrap;
+
     }
-}
 
-.ubicacion_informacion{
-    margin-left: 2%;
-}
-.ubicacion_informacion {
-    transition: 1s;
-}
+    .ubicacion_informacion {
+        margin-left: 2%;
+    }
 
-.ubicacion_informacion:hover {
-    transform: scale(1.2);
-}
+    .ubicacion_informacion {
+        transition: 1s;
+    }
 
-.contacto_informacion {
-    transition: 1s;
-}
+    .ubicacion_informacion:hover {
+        transform: scale(1.2);
+    }
 
-.contacto_informacion:hover {
-    transform: scale(1.2);
+    .contacto_informacion:hover {
+        transform: scale(1.2);
+    }
+
+
+
 }
