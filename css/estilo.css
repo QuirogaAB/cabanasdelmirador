@@ -363,7 +363,7 @@ a:active {
 
 /*------------fin footer--------*/
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
 
     .df_header {
         flex-direction: column;
@@ -443,7 +443,7 @@ a:active {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
 
     .df_header {
         flex-direction: column;
