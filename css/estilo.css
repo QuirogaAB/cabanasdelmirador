@@ -83,7 +83,8 @@ a:active {
     width: 22%;
     padding: 10px;
     border-radius: 10px;
-    display: inline-block;
+    justify-content: flex-start;
+    display:row;
     margin-inline: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -363,7 +364,7 @@ a:active {
 
 /*------------fin footer--------*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
 
     .df_header {
         flex-direction: column;
