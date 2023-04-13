@@ -1,13 +1,391 @@
-@import url(./secundarios/_variables.scss);
-@import url(./secundarios/_reset.scss);
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a,
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
 
-@import url(./secundarios/_principal.scss);
-@import url(./secundarios/_servicios.scss);
-@import url(./secundarios/_promociones.scss);
-@import url(./secundarios/_ubicacion.scss);
-@import url(./secundarios/_contacto.scss);
-@import url(./secundarios/_footer.scss);
+.df_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, #92aeff, #94e3ff, #7cdefd);
+  flex-direction: row;
+  padding: row;
+  flex-wrap: wrap;
+}
+.df_header .logo {
+  margin-left: 1%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.df_header .df_titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  font-family: "Great Vibes", cursive;
+  font-size: xx-large;
+  flex-wrap: wrap;
+}
 
+.portada {
+  display: flex;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-@import url(./secundarios/_medias-queries.scss);
+.main {
+  padding: 30px;
+}
+
+.tarjeta {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  float: left;
+  background-color: #b8860b;
+  background-size: cover;
+  width: 22%;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  display: row;
+  margin-inline: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+.tarjeta:hover {
+  transform: translate(0px, 10px);
+}
+.tarjeta .tarjeta_imagen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 35vh;
+  justify-content: center;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+.tarjeta .tarjeta_parrafo {
+  display: grid;
+  font-size: 23px;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.tarjeta .tarjeta_boton {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.tarjeta .tarjeta_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-area: " . texto";
+}
+
+.titulo_servicios {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.carousel-inner.servicios {
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+.servicios_informacion {
+  background-color: #b8860b;
+  padding: 10px;
+  border-radius: 10px;
+  display: flow-root;
+  margin-inline: 15%;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.servicios_informacion:hover {
+  transform: scale(1.2);
+}
+
+.titulo_promociones {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.promociones {
+  padding: 35px;
+  display: flex;
+  gap: 40px;
+}
+
+.carousel-inner.promociones {
+  background-size: cover;
+  height: 60vh;
+  width: 50%;
+}
+
+.promociones_imagenes {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 60vh;
+  max-width: 30%;
+  flex: 1;
+  margin-inline: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.promociones_informacion {
+  background-color: #b8860b;
+  padding: 10px;
+  border-radius: 10px;
+  display: flow-root;
+  margin-inline: 10%;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.promociones_informacion:hover {
+  transform: scale(1.2);
+}
+
+.titulo_ubicacion {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  font-family: "Great Vibes", cursive;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.ubicacion_mapa {
+  width: 650px;
+  margin-left: 30%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+.ubicacion_informacion {
+  background-color: #b8860b;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  justify-content: center;
+  margin-inline: 20px;
+  margin-left: 20%;
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.ubicacion_informacion:hover {
+  transform: scale(1.2);
+}
+
+.titulo_contacto {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.contacto_informacion {
+  background-color: #b8860b;
+  padding: 1%;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 40%;
+  flex-wrap: wrap;
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+  font-weight: 300;
+  transition: 1s;
+}
+.contacto_informacion:hover {
+  transform: scale(1.2);
+}
+
+.formulario {
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 46%;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+.redes {
+  margin-top: 2%;
+  margin-left: 49%;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+.imagen_contacto {
+  background-color: #b8860b;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_footer {
+  background-color: #87cefa;
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 10px;
+  justify-content: center;
+}
+
+.type_white {
+  color: #000000;
+}
+
+@media screen and (max-width: 769px) {
+  .df_header {
+    flex-direction: column;
+  }
+  .df_ul {
+    align-items: flex-start;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+  }
+  .tarjeta:hover {
+    transform: translate(0px, 10px);
+  }
+  .tarjeta_imagen {
+    padding: 10%;
+  }
+  .servicios {
+    flex-direction: column;
+  }
+  .servicios_imagenes {
+    flex-direction: column;
+  }
+  .servicios_informacion {
+    transition: 1s;
+  }
+  .servicios_informacion:hover {
+    transform: scale(1.2);
+  }
+  .promociones_informacion {
+    transition: 1s;
+  }
+  .promociones_informacion:hover {
+    transform: scale(1.2);
+  }
+  .ubicacion_mapa {
+    width: 600px;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+  }
+  .ubicacion_informacion {
+    margin-left: 5%;
+    transition: 1s;
+  }
+  .ubicacion_informacion:hover {
+    transform: scale(1.2);
+  }
+  .contacto_informacion {
+    transition: 1s;
+  }
+  .contacto_informacion:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 320px) {
+  .df_header {
+    flex-direction: column;
+  }
+  .df_ul {
+    align-items: flex-start;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template-columns: 1fr;
+    float: left;
+  }
+  .tarjeta:hover {
+    transform: translate(0px, 10px);
+  }
+  .servicios {
+    flex-direction: column;
+  }
+  .servicios_informacion {
+    transition: 1s;
+  }
+  .servicios_informacion:hover {
+    transform: scale(1.2);
+  }
+  .promociones_informacion {
+    transition: 1s;
+  }
+  .promociones_informacion:hover {
+    transform: scale(1.2);
+  }
+  .ubicacion_mapa {
+    width: 600px;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+  }
+  .ubicacion_informacion {
+    margin-left: 2%;
+    transition: 1s;
+  }
+  .ubicacion_informacion:hover {
+    transform: scale(1.2);
+  }
+  .contacto_informacion:hover {
+    transform: scale(1.2);
+  }
+}/*# sourceMappingURL=estilete.css.map */
