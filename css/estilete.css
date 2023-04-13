@@ -11,96 +11,54 @@ a:active {
   color: #000000;
 }
 
-.df_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: linear-gradient(to top, #92aeff, #94e3ff, #7cdefd);
-  flex-direction: row;
-  padding: row;
+.titulo_promociones {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
   flex-wrap: wrap;
-}
-.df_header .logo {
-  margin-left: 1%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.df_header .df_titulo {
-  display: flex;
-  justify-content: center;
-  margin-top: 15%;
   font-family: "Great Vibes", cursive;
+  font-weight: 700;
   font-size: xx-large;
-  flex-wrap: wrap;
 }
 
-.portada {
+.promociones {
+  padding: 35px;
   display: flex;
+  gap: 40px;
+}
+
+.carousel-inner.promociones {
   background-size: cover;
-  height: 90vh;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 60vh;
+  width: 50%;
+}
+
+.promociones_imagenes {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 60vh;
+  max-width: 30%;
+  flex: 1;
+  margin-inline: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.main {
-  padding: 30px;
-}
-
-.tarjeta {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  float: left;
+.promociones_informacion {
   background-color: #b8860b;
-  background-size: cover;
-  width: 22%;
   padding: 10px;
   border-radius: 10px;
-  justify-content: space-between;
-  display: row;
-  margin-inline: 20px;
+  display: flow-root;
+  margin-inline: 10%;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
   margin-top: 5%;
   margin-bottom: 5%;
   flex-wrap: wrap;
+  transition: 1s;
 }
-.tarjeta:hover {
-  transform: translate(0px, 10px);
-}
-.tarjeta .tarjeta_imagen {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  width: 100%;
-  height: 35vh;
-  justify-content: center;
-  margin-bottom: 5px;
-  flex-wrap: wrap;
-}
-.tarjeta .tarjeta_parrafo {
-  display: grid;
-  font-size: 23px;
-  font-family: "Great Vibes", cursive;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-.tarjeta .tarjeta_boton {
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 5px;
-  flex-wrap: wrap;
-}
-.tarjeta .tarjeta_grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-area: " . texto";
+.promociones_informacion:hover {
+  transform: scale(1.2);
 }
 
 .titulo_servicios {

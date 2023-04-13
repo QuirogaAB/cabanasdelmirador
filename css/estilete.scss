@@ -1,15 +1,15 @@
-@import  "./secundarios/_variables.scss";
-@import  "./secundarios/_reset.scss";
+@import  "./secundarios/variables";
+@import  "./secundarios/reset";
 
-@import "./secundarios/_principal.scss";
-@import "./secundarios/_servicios.scss";
-@import "./secundarios/_promociones.scss";
-@import "./secundarios/_ubicacion.scss";
-@import "./secundarios/_contacto.scss";
-@import "./secundarios/_footer.scss";
+@import "./secundarios/promociones";
+@import "./secundarios/servicios";
+@import "./secundarios/promociones";
+@import "./secundarios/ubicacion";
+@import "./secundarios/contacto";
+@import "./secundarios/footer";
 
 
-@import "./secundarios/_medias-queries.scss";
+@import "./secundarios/medias-queries";
 
 
 
