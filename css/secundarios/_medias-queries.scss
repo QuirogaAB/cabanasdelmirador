@@ -1,0 +1,134 @@
+@media screen and (max-width: 769px) {
+    .df_header {
+        flex-direction: column;
+    }
+
+    .df_ul {
+        align-items: flex-start;
+    }
+
+    .tarjeta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        float: left;
+
+        &:hover {
+            transform: translate(0px, 10px);
+        }
+    }
+
+    .tarjeta_imagen {
+        padding: 10%;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+
+    .servicios_imagenes {
+        flex-direction: column;
+    }
+
+    .servicios_informacion {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .promociones_informacion {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .ubicacion_mapa {
+        width: 600px;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+    }
+
+    .ubicacion_informacion {
+        margin-left: 5%;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .contacto_informacion {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .df_header {
+        flex-direction: column;
+    }
+
+    .df_ul {
+        align-items: flex-start;
+    }
+
+    .tarjeta {
+        display: grid;
+        grid-template-columns: 1fr;
+        float: left;
+
+        &:hover {
+            transform: translate(0px, 10px);
+        }
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+
+    .servicios_informacion {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .promociones_informacion {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .ubicacion_mapa {
+        width: 600px;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+    }
+
+    .ubicacion_informacion {
+        margin-left: 2%;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .contacto_informacion {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.titulo_servicios {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    font-family: $font-family_1;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.carousel-inner.servicios {
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.servicios_informacion {
+    background-color: $background-color_1;
+    padding: 10px;
+    border-radius: 10px;
+    display: flow-root;
+    margin-inline: 15%;
+    font-family: $font-family_1;
+    font-size: 30px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    transition: 1s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+

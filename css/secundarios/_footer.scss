@@ -1,0 +1,11 @@
+.bg_footer {
+    background-color: $background-color_3;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    justify-content: center;
+}
+
+.type_white {
+    color: $color_1;
+}
